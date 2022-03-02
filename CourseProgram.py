@@ -23,7 +23,7 @@ def main():
 
     for person in students:
         # I feel objectified as a student.
-        personalobject = C.Register(person, crn)
+        personalobject = C.Register(person, AdvPy.get_crn())
         if AdvPy.get_status() == "open":
             AdvPy.update_seat_count()
             print("Student Name: ", personalobject.get_name())
